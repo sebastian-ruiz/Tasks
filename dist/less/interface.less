@@ -1,0 +1,129 @@
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.ui-layout-west {
+  background-color: #34313A;
+  color: #D4D4D4;
+
+  .user-account {
+    padding: 7px 0 0 10px;
+    height: 34px;
+    background: #2D2B33;
+    border-bottom: 1px solid #3E3C43;
+    .profile-image {
+      width: 19px;
+      height: 19px;
+      border-radius: 2px;
+      background-image: url("../images/profile.png");
+      background-size: 100%;
+      float: left;
+    }
+    .profile-text {
+      float: left;
+      padding: 1px 0 0 10px;
+    }
+  }
+
+  .navigation-wrapper {
+    ul {
+      list-style-type: none;
+      padding: 10px 0 0 0;
+      li {
+        padding: 3px 0 3px 13px;
+        margin-bottom: 2px;
+        .glyphicon {
+          margin-right: 10px;
+        }
+      }
+      li.selected-list {
+        background-color: #4386F4;
+        color: #fff;
+      }
+    }
+  }
+  .footer {
+    padding: 0 0 10px 13px;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.ui-layout-center {
+  overflow: scroll;
+  padding: 15px 15px 5px 9px;
+  .tasks-wrapper {
+    
+    padding-bottom: 10px;
+    .task-item {
+      background-image: url("../images/dark_noise.png");
+      background-repeat: repeat;
+      border-radius: 2px;
+      border: 1px solid #BCBCBC;
+      height: 28px;
+      padding: 5px 10px 5px 10px;
+      div {
+        width: 100%;
+        padding-right: 30px;
+      }
+      input:focus{
+        outline: 0;
+      }
+      input {
+        border: none;
+        background-color: transparent;
+        float: left;
+        width: 100%;
+      }
+      input[type=checkbox] {
+        display:none;
+
+      }
+      input[type=checkbox] + label
+      {
+        //background: #999;
+        background-image: url("../images/checkbox_unchecked.png");
+        height: 16px;
+        width: 16px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+        float: right;
+        margin: 0 0 0 0;
+      }
+      input[type=checkbox]:checked + label
+      {
+        //background: #FFF;
+        background-image: url("../images/checkbox_checked.png");
+        height: 16px;
+        width: 16px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+      }
+    }
+  }
+  .deselected-item {
+    .task-item {
+      background: transparent;
+      color: #888888;
+    }
+  }
+  .selected-item {
+    .task-item {
+      background-image: url("../images/blue_noise.jpg");
+      //color: #3892E3;
+    }
+  }
+  .large {
+    height: 100px !important;
+  }
+}
