@@ -60,8 +60,8 @@
         <div class="tasks-wrapper working-item">
             <div class="task-item">
                 <span><%- title %></span>
-
                 <input type='checkbox' class="toggle" name='thing' value='valuable' id="thing-<%- order %>" <%= completed ? 'checked' : '' %>><label for="thing-<%- order %>"></label>
+                <button class="todo-destroy"></button>
             </div>
         </div>
     </script>
@@ -100,21 +100,17 @@
 <script src="dist/js/libs/jquery-latest.js"></script>
 <script src="dist/js/libs/jquery-ui-latest.js"></script>
 <script src="dist/js/libs/jquery.layout-latest.min.js"></script>
-<script src="dist/js/libs/main.js"></script>
+<script src="dist/bower_components/underscore/underscore.js"></script>
+<script src="dist/bower_components/backbone/backbone.js"></script>
 
-<script src="dist/js/libs/parse-1.0.14.min.js"></script>
-<script type="text/javascript">
-    Parse.initialize("bQgGrGrtOgTx6I0NuZweurVhtC3TkREK35dziRWY", "jqFJkF9kn30QFhya2ZsL420qfasYjsGPqSo5Nawg");
-</script>
-<script src="dist/assets/base.js"></script>
-<script src="dist/js/libs/underscore-min.js"></script>
-<script src="dist/js/libs/backbone-min.js"></script>
+<script src="dist/bower_components/backbone.localStorage/backbone.localStorage.js"></script>
 <script src="dist/js/models/todo.js"></script>
 <script src="dist/js/collections/todos.js"></script>
-<script src="dist/js/views/todos.js"></script>
-<script src="dist/js/views/app.js"></script>
+<script src="dist/js/views/todo-view.js"></script>
+<script src="dist/js/views/app-view.js"></script>
 <script src="dist/js/routers/router.js"></script>
 <script src="dist/js/app.js"></script>
-
+<!--<script src="dist/js/libs/parse-1.0.14.min.js"></script>-->
+<script src="dist/js/main.js"></script>
 </body>
 </html>
