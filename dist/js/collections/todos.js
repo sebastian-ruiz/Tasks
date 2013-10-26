@@ -16,6 +16,17 @@ var app = app || {};
 		// Save all of the todo items under the `"todos"` namespace.
 		localStorage: new Backbone.LocalStorage('todos-backbone'),
 
+        deselectLastSelected: function() {
+            var selected = this.find(function(model) { return model.get('selected') == true; });
+            if(selected != undefined){
+                selected.save({
+                    selected: false
+                });
+            }
+        },
+        deleteSelected: function(){
+            console.log("delete selected");
+        },
 		// Filter down the list of all todo items that are finished.
 		completed: function () {
 			return this.filter(function (todo) {

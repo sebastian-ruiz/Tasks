@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/libs/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/views/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/views/todos.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/views/app-view.js" afterPath="$PROJECT_DIR$/dist/js/views/app-view.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/app.js" afterPath="$PROJECT_DIR$/dist/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/routers/router.js" afterPath="$PROJECT_DIR$/dist/js/routers/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/views/todo-view.js" afterPath="$PROJECT_DIR$/dist/js/views/todo-view.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/models/todo.js" afterPath="$PROJECT_DIR$/dist/js/models/todo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/collections/todos.js" afterPath="$PROJECT_DIR$/dist/js/collections/todos.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -16,14 +14,15 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/main.less" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382267246435" ignored="false" />
     <file path="/main.css" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382267320479" ignored="false" />
-    <file path="/index.html" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382782737850" ignored="false" />
+    <file path="/index.html" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382810164799" ignored="false" />
     <file path="/interface.less" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382376502048" ignored="false" />
     <file path="/main.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382276752446" ignored="false" />
-    <file path="/todo.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382286880962" ignored="false" />
-    <file path="/todos.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382737659824" ignored="false" />
-    <file path="/app.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382378475174" ignored="false" />
-    <file path="$PROJECT_DIR$/dist/css/interface.css" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382376503296" ignored="false" />
+    <file path="/todo.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382810417302" ignored="false" />
+    <file path="/todos.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382812951572" ignored="false" />
+    <file path="/app.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382811955794" ignored="false" />
     <file path="/Dummy.txt" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382780109454" ignored="false" />
+    <file path="/todo-view.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382806864197" ignored="false" />
+    <file path="/app-view.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382812998147" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,25 +86,16 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="65" selection-start="3514" selection-end="3514" vertical-scroll-proportion="0.6785714">
+            <state line="66" column="0" selection-start="2970" selection-end="2970" vertical-scroll-proportion="0.45731708">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/bower_components/todomvc-common/base.js">
+      <file leaf-file-name="interface.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/less/interface.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="31" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="152" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
+            <state line="119" column="16" selection-start="2430" selection-end="2443" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,7 +104,7 @@
       <file leaf-file-name="todos.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/js/collections/todos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
+            <state line="26" column="22" selection-start="733" selection-end="747" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -123,7 +113,29 @@
       <file leaf-file-name="todo.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/js/models/todo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="43" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
+            <state line="41" column="19" selection-start="1198" selection-end="1209" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app-view.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/js/views/app-view.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="140" column="27" selection-start="4005" selection-end="4005" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todo-view.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/js/views/todo-view.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="94" column="36" selection-start="2610" selection-end="2631" vertical-scroll-proportion="-19.884615">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -154,30 +166,31 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/dist/less/main.less" />
         <option value="$PROJECT_DIR$/dist/less/bootstrap/variables.less" />
         <option value="$PROJECT_DIR$/dist/js/main.js" />
         <option value="$PROJECT_DIR$/dist/js/ember/app.js" />
         <option value="$PROJECT_DIR$/dist/js/ember/models/todo.js" />
         <option value="$PROJECT_DIR$/dist/js/ember/application.js" />
         <option value="$PROJECT_DIR$/dist/js/ember/router.js" />
-        <option value="$PROJECT_DIR$/dist/js/collections/todos.js" />
         <option value="$PROJECT_DIR$/dist/less/interface.less" />
         <option value="$PROJECT_DIR$/dist/js/libs/main.js" />
         <option value="$PROJECT_DIR$/dist/js/views/app.js" />
         <option value="$PROJECT_DIR$/dist/js/views/todos.js" />
-        <option value="$PROJECT_DIR$/dist/js/app.js" />
         <option value="$PROJECT_DIR$/dist/js/models/todo.js" />
+        <option value="$PROJECT_DIR$/dist/js/views/todo-view.js" />
+        <option value="$PROJECT_DIR$/dist/js/app.js" />
+        <option value="$PROJECT_DIR$/dist/js/collections/todos.js" />
+        <option value="$PROJECT_DIR$/dist/js/views/app-view.js" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1920" />
-    <option name="y" value="-87" />
-    <option name="width" value="1920" />
-    <option name="height" value="1010" />
+    <option name="x" value="206" />
+    <option name="y" value="22" />
+    <option name="width" value="1234" />
+    <option name="height" value="839" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -252,7 +265,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="less" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -273,8 +286,26 @@
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
+              <option name="myItemId" value="Tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -292,7 +323,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -310,11 +345,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="todomvc-common" />
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="collections" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -427,7 +484,7 @@
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="-87" width="1920" height="1010" extended-state="6" />
+    <frame x="206" y="22" width="1234" height="839" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -435,7 +492,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1189968" sideWeight="0.67086834" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18771043" sideWeight="0.67086834" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -512,18 +569,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dist/less/main.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="72" selection-start="5171" selection-end="5171" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/css/bootstrap-theme.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="46" selection-start="225" selection-end="225" vertical-scroll-proportion="0.15350877" />
@@ -551,37 +596,9 @@
         <state line="50" column="77" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/less/interface.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="27" selection-start="2325" selection-end="2325" vertical-scroll-proportion="0.51895046" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="152" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/collections/todos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/models/todo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="43" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/bower_components/todomvc-common/base.js">
@@ -598,9 +615,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/routers/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/less/interface.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="16" selection-start="2430" selection-end="2443" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="17" selection-start="84" selection-end="97" vertical-scroll-proportion="0.08658009">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/views/todo-view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="36" selection-start="2610" selection-end="2631" vertical-scroll-proportion="-19.884615">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/models/todo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="19" selection-start="1198" selection-end="1209" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/collections/todos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="22" selection-start="733" selection-end="747" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/views/app-view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="27" selection-start="4005" selection-end="4005" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="65" selection-start="3514" selection-end="3514" vertical-scroll-proportion="0.6785714">
+        <state line="66" column="0" selection-start="2970" selection-end="2970" vertical-scroll-proportion="0.45731708">
           <folding />
         </state>
       </provider>

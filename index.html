@@ -57,15 +57,13 @@
         <footer id="footer"></footer>
     </section>
     <script type="text/template" id="item-template">
-        <div class="tasks-wrapper working-item">
+        <div class="tasks-wrapper working-item <%= selected ? 'selected-item' : '' %>" data-objectid="<%= objectid %>">
             <div class="task-item">
-                <span><%- title %></span>
-                <input type='checkbox' class="toggle" name='thing' value='valuable' id="thing-<%- order %>" <%= completed ? 'checked' : '' %>><label for="thing-<%- order %>"></label>
-                <button class="todo-destroy"></button>
+                <span><%- title %> </span>
+                <input type='checkbox' class="toggle" name='thing' value='valuable' id="thing-<%= objectid %>" <%= completed ? 'checked' : '' %>><label for="thing-<%= objectid %>"></label>
             </div>
         </div>
     </script>
-
 
     <script type="text/template" id="stats-template">
         <span id="todo-count"><strong><%= remaining %></strong> <%= remaining === 1 ? 'item' : 'items' %> left</span>

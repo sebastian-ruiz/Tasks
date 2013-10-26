@@ -21,7 +21,8 @@ var app = app || {};
 			'dblclick label': 'edit',
 			'click .destroy': 'clear',
 			'keypress .edit': 'updateOnEnter',
-			'blur .edit': 'close'
+			'blur .edit': 'close',
+            'click .working-item': 'newSelected'
 		},
 
 		// The TodoView listens for changes to its model, re-rendering. Since there's
@@ -31,6 +32,7 @@ var app = app || {};
 			this.listenTo(this.model, 'change', this.render);
 			this.listenTo(this.model, 'destroy', this.remove);
 			this.listenTo(this.model, 'visible', this.toggleVisible);
+            this.model.generateObjectid();
 		},
 
 		// Re-render the titles of the todo item.
@@ -53,7 +55,9 @@ var app = app || {};
 				(isCompleted && app.TodoFilter === 'active')
 			);
 		},
-
+        newSelected: function () {
+            this.model.setSelected();
+        },
 		// Toggle the `"completed"` state of the model.
 		toggleCompleted: function () {
 			this.model.toggle();

@@ -13,7 +13,9 @@ var app = app || {};
 		// and ensure that each todo created has `title` and `completed` keys.
 		defaults: {
 			title: '',
-			completed: false
+			completed: false,
+            selected: false,
+            objectid: ''
 		},
 
 		// Toggle the `completed` state of this todo item.
@@ -21,6 +23,35 @@ var app = app || {};
 			this.save({
 				completed: !this.get('completed')
 			});
-		}
+		},
+
+        generateObjectid: function(){
+            if(this.get("objectid") == ''){
+                var generatedObjectid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                    var r = Math.random()*16|0, v = c == 'x' ? r : (r&0x3|0x8);
+                    return v.toString(16);
+                });
+                console.log("Generated id: " + generatedObjectid);
+                this.save({
+                    objectid: generatedObjectid
+                });
+            }else {
+                console.log("already: " + this.get("objectid"));
+            }
+        },
+        setSelected: function() {
+            if(this.get('selected') == true){
+                this.save({
+                    selected: false
+                });
+            }else {
+                this.collection.deselectLastSelected();
+                this.save({
+                    selected: true
+                });
+            }
+
+        }
+
 	});
 })();
