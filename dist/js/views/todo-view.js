@@ -22,7 +22,7 @@ var app = app || {};
 			'click .destroy': 'clear',
 			'keypress .edit': 'updateOnEnter',
 			'blur .edit': 'close',
-            'click .working-item': 'newSelected'
+            'click .tasks-wrapper': 'newSelected'
 		},
 
 		// The TodoView listens for changes to its model, re-rendering. Since there's

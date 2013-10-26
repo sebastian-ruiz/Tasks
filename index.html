@@ -46,8 +46,8 @@
             <input id="toggle-all" type="checkbox">
             <label for="toggle-all">Mark all as complete</label>
         </section>
-        <div class="tasks-wrapper deselected-item">
-            <div class="task-item">
+        <div class="new-task-wrapper deselected-item">
+            <div class="new-task-input">
                 <div>
                     <input id="new-todo" placeholder="What needs to be done?" autofocus>
                 </div>
@@ -57,10 +57,16 @@
         <footer id="footer"></footer>
     </section>
     <script type="text/template" id="item-template">
-        <div class="tasks-wrapper working-item <%= selected ? 'selected-item' : '' %>" data-objectid="<%= objectid %>">
+        <div class="tasks-wrapper <%= selected ? 'selected-item' : '' %>" data-objectid="<%= objectid %>">
             <div class="task-item">
                 <span><%- title %> </span>
+                <div>
+                    <input class="edit" value="<%- title %>">
+                </div>
                 <input type='checkbox' class="toggle" name='thing' value='valuable' id="thing-<%= objectid %>" <%= completed ? 'checked' : '' %>><label for="thing-<%= objectid %>"></label>
+            </div>
+            <div class="task-item-expandable">
+                <span>content here</span>
             </div>
         </div>
     </script>

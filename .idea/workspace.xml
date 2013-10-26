@@ -2,26 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/views/app-view.js" afterPath="$PROJECT_DIR$/dist/js/views/app-view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/app.js" afterPath="$PROJECT_DIR$/dist/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/interface.css" afterPath="$PROJECT_DIR$/dist/css/interface.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/less/interface.less" afterPath="$PROJECT_DIR$/dist/less/interface.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/main.js" afterPath="$PROJECT_DIR$/dist/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/views/todo-view.js" afterPath="$PROJECT_DIR$/dist/js/views/todo-view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/models/todo.js" afterPath="$PROJECT_DIR$/dist/js/models/todo.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/collections/todos.js" afterPath="$PROJECT_DIR$/dist/js/collections/todos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Tasks.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/main.less" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382267246435" ignored="false" />
     <file path="/main.css" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382267320479" ignored="false" />
-    <file path="/index.html" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382810164799" ignored="false" />
-    <file path="/interface.less" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382376502048" ignored="false" />
+    <file path="/index.html" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382816662948" ignored="false" />
+    <file path="/interface.less" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382816465000" ignored="false" />
     <file path="/main.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382276752446" ignored="false" />
     <file path="/todo.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382810417302" ignored="false" />
-    <file path="/todos.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382812951572" ignored="false" />
+    <file path="/todos.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382814815093" ignored="false" />
     <file path="/app.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382811955794" ignored="false" />
     <file path="/Dummy.txt" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382780109454" ignored="false" />
-    <file path="/todo-view.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382806864197" ignored="false" />
+    <file path="/todo-view.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382816064626" ignored="false" />
     <file path="/app-view.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382812998147" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,10 +82,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="0" selection-start="2970" selection-end="2970" vertical-scroll-proportion="0.45731708">
+            <state line="62" column="16" selection-start="2744" selection-end="2834" vertical-scroll-proportion="-13.125">
               <folding />
             </state>
           </provider>
@@ -95,7 +94,16 @@
       <file leaf-file-name="interface.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/less/interface.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="16" selection-start="2430" selection-end="2443" vertical-scroll-proportion="0.0">
+            <state line="124" column="87" selection-start="2582" selection-end="2582" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="0" selection-start="4017" selection-end="4136" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -104,7 +112,7 @@
       <file leaf-file-name="todos.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/js/collections/todos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="22" selection-start="733" selection-end="747" vertical-scroll-proportion="0.0">
+            <state line="19" column="116" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,10 +140,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todo-view.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="todo-view.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dist/js/views/todo-view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="36" selection-start="2610" selection-end="2631" vertical-scroll-proportion="-19.884615">
+            <state line="21" column="26" selection-start="499" selection-end="499" vertical-scroll-proportion="0.45586106">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -167,20 +175,20 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/dist/less/bootstrap/variables.less" />
-        <option value="$PROJECT_DIR$/dist/js/main.js" />
         <option value="$PROJECT_DIR$/dist/js/ember/app.js" />
         <option value="$PROJECT_DIR$/dist/js/ember/models/todo.js" />
         <option value="$PROJECT_DIR$/dist/js/ember/application.js" />
         <option value="$PROJECT_DIR$/dist/js/ember/router.js" />
-        <option value="$PROJECT_DIR$/dist/less/interface.less" />
         <option value="$PROJECT_DIR$/dist/js/libs/main.js" />
         <option value="$PROJECT_DIR$/dist/js/views/app.js" />
         <option value="$PROJECT_DIR$/dist/js/views/todos.js" />
         <option value="$PROJECT_DIR$/dist/js/models/todo.js" />
-        <option value="$PROJECT_DIR$/dist/js/views/todo-view.js" />
         <option value="$PROJECT_DIR$/dist/js/app.js" />
-        <option value="$PROJECT_DIR$/dist/js/collections/todos.js" />
         <option value="$PROJECT_DIR$/dist/js/views/app-view.js" />
+        <option value="$PROJECT_DIR$/dist/js/collections/todos.js" />
+        <option value="$PROJECT_DIR$/dist/js/main.js" />
+        <option value="$PROJECT_DIR$/dist/js/views/todo-view.js" />
+        <option value="$PROJECT_DIR$/dist/less/interface.less" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -596,11 +604,6 @@
         <state line="50" column="77" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/bower_components/todomvc-common/base.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="31" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
@@ -624,13 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/less/interface.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="16" selection-start="2430" selection-end="2443" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="17" selection-start="84" selection-end="97" vertical-scroll-proportion="0.08658009">
@@ -638,12 +634,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/views/todo-view.js">
+    <entry file="file://$PROJECT_DIR$/dist/js/collections/todos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="36" selection-start="2610" selection-end="2631" vertical-scroll-proportion="-19.884615">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="19" column="116" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -656,9 +650,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/collections/todos.js">
+    <entry file="file://$PROJECT_DIR$/dist/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="22" selection-start="733" selection-end="747" vertical-scroll-proportion="0.0">
+        <state line="93" column="0" selection-start="4017" selection-end="4136" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/less/interface.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="87" selection-start="2582" selection-end="2582" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="16" selection-start="2744" selection-end="2834" vertical-scroll-proportion="-13.125">
           <folding />
         </state>
       </provider>
@@ -672,10 +680,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/dist/js/views/todo-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="2970" selection-end="2970" vertical-scroll-proportion="0.45731708">
-          <folding />
+        <state line="21" column="26" selection-start="499" selection-end="499" vertical-scroll-proportion="0.45586106">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

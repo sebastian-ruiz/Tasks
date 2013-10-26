@@ -63,15 +63,13 @@ ul {
   overflow: scroll;
   padding: 15px 15px 5px 9px;
   .tasks-wrapper {
-    
-    padding-bottom: 10px;
+    background-image: url("../images/dark_noise.png");
+    background-repeat: repeat;
+    border-radius: 2px;
+    border: 1px solid #BCBCBC;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
     .task-item {
-      background-image: url("../images/dark_noise.png");
-      background-repeat: repeat;
-      border-radius: 2px;
-      border: 1px solid #BCBCBC;
-      height: 28px;
-      padding: 5px 10px 5px 10px;
       div {
         width: 100%;
         padding-right: 30px;
@@ -111,19 +109,57 @@ ul {
       }
     }
   }
-  .deselected-item {
-    .task-item {
+
+
+  .new-task-wrapper {
+    border-radius: 2px;
+    border: 1px solid #BCBCBC;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
+    .new-task-input {
+      height: 16px;
       background: transparent;
       color: #888888;
+      div {
+        width: 100%;
+        padding-right: 30px;
+      }
+      input:focus{
+        outline: 0;
+      }
+      input {
+        border: none;
+        background-color: transparent;
+        float: left;
+        width: 100%;
+      }
+      input[type=checkbox] {
+        display:none;
+
+      }
+      input[type=checkbox] + label
+      {
+        //background: #999;
+        background-image: url("../images/checkbox_unchecked.png");
+        height: 16px;
+        width: 16px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+        float: right;
+        margin: 0 0 0 0;
+      }
+      input[type=checkbox]:checked + label
+      {
+        //background: #FFF;
+        background-image: url("../images/checkbox_checked.png");
+        height: 16px;
+        width: 16px;
+        display:inline-block;
+        padding: 0 0 0 0px;
+      }
     }
   }
   .selected-item {
-    .task-item {
-      background-image: url("../images/blue_noise.jpg");
-      //color: #3892E3;
-    }
-  }
-  .large {
-    height: 100px !important;
+    background-image: url("../images/blue_noise.jpg");
   }
 }

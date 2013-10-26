@@ -25,7 +25,12 @@ var app = app || {};
             }
         },
         deleteSelected: function(){
-            console.log("delete selected");
+            var selected = this.find(function(model) { return model.get('selected') == true; });
+            if(selected != undefined){
+                selected.destroy();
+                console.log("deleted: "+ selected.get("title"));
+            }
+
         },
 		// Filter down the list of all todo items that are finished.
 		completed: function () {

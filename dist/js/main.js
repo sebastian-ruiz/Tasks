@@ -91,10 +91,10 @@ $(document).ready(function () {
         fallback: 'fallback.png',
         monochrome: false
     });
-    var toggle = $('.dropdown-toggle');
-    toggle.on('contextmenu',function(e){
-        e.preventDefault();
-        toggle.dropdown('toggle');
-    });
+//    $(function() {
+//        $( "#todo-list" ).accordion({
+//            heightStyle: "content"
+//        });
+//    });
 
 });
