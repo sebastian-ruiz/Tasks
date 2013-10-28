@@ -12,7 +12,8 @@ var app = app || {};
 
 		// Instead of generating a new element, bind to the existing skeleton of
 		// the App already present in the HTML.
-		el: '#todoapp',
+		el: 'body',
+        //el: '#todoapp',
 
 		// Our template for the line of statistics at the bottom of the app.
 		statsTemplate: _.template($('#stats-template').html()),
@@ -21,7 +22,7 @@ var app = app || {};
 		events: {
 			'keypress #new-todo': 'createOnEnter',
 			'click #clear-completed': 'clearCompleted',
-			'click #toggle-all': 'toggleAllComplete'
+			'click #toggle-all': 'toggleAllComplete',
 		},
 
 		// At initialization we bind to the relevant events on the `Todos`
@@ -41,6 +42,7 @@ var app = app || {};
 
             $(document).on('keyup', this.keyUp);
             $(document).on('keydown', this.keyDown);
+            $(document).on('click', this.deselectAll);
 			// Suppresses 'add' events with {reset: true} and prevents the app view 
 			// from being re-rendered for every model. Only renders when the 'reset'
 			// event is triggered at the end of the fetch.
@@ -139,12 +141,19 @@ var app = app || {};
         },
         keyDown: function(event) {
             //Only detect key down to stop browser redirect.
-            console.log("event keydown");
             if(event.which == BACKSPACE_KEY){
                 if(!$("*:focus").is("textarea, input")){
                     event.preventDefault();
                 }
             }
+        },
+        deselectAll: function(e) {
+            var container = $(".tasks-wrapper");
+            if(!container.is(e.target)&& container.has(e.target).length === 0){
+                $(".tasks-wrapper").removeClass("selected-item");
+                $("li").removeClass("editing");
+            }
+
         }
 	});
 })(jQuery);

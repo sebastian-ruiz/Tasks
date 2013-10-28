@@ -36,54 +36,63 @@
         </ul>
     </div>
     <div class="footer">
-        <span class="glyphicon glyphicon-cog"></span>
+        <div class="dropdown">
+            <a data-toggle="dropdown" class="new-list" href="#"><span class="glyphicon glyphicon-plus"></span></a>
+            <!--<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">-->
+                <!--<li><a href="#">New List</a></li>-->
+                <!--<li><a href="#">New Task</a></li>-->
+            <!--</ul>-->
+        </div>
+        <div class="dropdown">
+            <a data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+                <li><a href="#">Tweet @me_sruiz</a></li>
+            </ul>
+        </div>
     </div>
+
+
+    <script type="text/template" id="list-template">
+        <span class="glyphicon glyphicon-th-list"></span><%- title %>
+    </script>
 </div>
 <div class="ui-layout-center">
-    <section id="todoapp">
-        <section id="main">
-            <ul id="todo-list"></ul>
-            <input id="toggle-all" type="checkbox">
-            <label for="toggle-all">Mark all as complete</label>
-        </section>
-        <div class="new-task-wrapper deselected-item">
-            <div class="new-task-input">
-                <div class="input-wrapper">
-                    <input id="new-todo" placeholder="What needs to be done?" autofocus>
-                </div>
-                <input type='checkbox' name='thing' value='valuable' id="thing"/><label for="thing"></label>
-            </div>
-        </div>
-        <footer id="footer"></footer>
-    </section>
+    <ul id="todo-list"></ul>
+    <div class="new-task-wrapper deselected-item">
+        <input id="new-todo" placeholder="What needs to be done?" autofocus>
+    </div>
+    <input id="toggle-all" type="checkbox">
+    <label for="toggle-all">Mark all as complete</label>
+    <footer id="footer"></footer>
 
     <script type="text/template" id="item-template">
-        <div class="tasks-wrapper <%= selected ? 'selected-item' : '' %>" data-objectid="<%= objectid %>">
+        <div class="tasks-wrapper" data-objectid="<%= objectid %>">
             <div class="task-item">
-                <span class="item-title"><%- title %></span>
+                <input type='checkbox' class="toggle" name='thing' value='valuable' id="thing-<%= objectid %>" <%= completed ? 'checked' : '' %>><label for="thing-<%= objectid %>"></label>
                 <div class="input-wrapper">
+                    <span class="item-title"><%- title %></span>
                     <input class="edit" value="<%- title %>" >
                 </div>
-                <input type='checkbox' class="toggle" name='thing' value='valuable' id="thing-<%= objectid %>" <%= completed ? 'checked' : '' %>><label for="thing-<%= objectid %>"></label>
             </div>
             <div class="task-item-expandable clearfix">
                 <ul class="details">
                     <li>
                         <div class="input-details-wrapper">
-                            <input id="input-tags" placeholder="Tags">
+                            <input id="input-tags" placeholder="Tags" value="<%- tags %>">
                         </div>
-                        <span class="glyphicon glyphicon-tags"></span>
+                        <span class="glyphicon glyphicon-tag"></span>
                     </li>
                     <li>
-
                         <div class="input-details-wrapper">
-                            <input id="input-notes" placeholder="Notes">
+                            <input id="input-notes" placeholder="Notes" value="<%- notes %>">
                         </div>
                         <span class="glyphicon glyphicon-file"></span>
                     </li>
                     <li>
                         <div class="input-details-wrapper">
-                            <input id="input-date" placeholder="Date due">
+                            <input id="input-date" class="input-date" placeholder="Date due" value="<%- dateDue %>">
                         </div>
                         <span class="glyphicon glyphicon-calendar"></span>
                     </li>
@@ -109,33 +118,31 @@
         <button id="clear-completed">Clear completed (<%= completed %>)</button>
         <% } %>
     </script>
-    <div class="dropdown">
-        <a class="dropdown-toggle" href="#">Dropdown trigger</a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-            <li>Hello</li>
-            <li>World</li>
-        </ul>
-    </div>
 </div>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<!--<script src="dist/js/bootstrap.min.js"></script>-->
-<script src="dist/js/libs/jquery-latest.js"></script>
+
+<!--<script src="dist/js/libs/jquery-latest.js"></script>-->
+<script src="dist/js/libs/jquery-1.10.2.min.js"></script>
 <script src="dist/js/libs/jquery-ui-latest.js"></script>
 <script src="dist/js/libs/jquery.layout-latest.min.js"></script>
 <script src="dist/bower_components/underscore/underscore.js"></script>
 <script src="dist/bower_components/backbone/backbone.js"></script>
-
+<script src="dist/js/libs/bootstrap.min.js"></script>
 <script src="dist/bower_components/backbone.localStorage/backbone.localStorage.js"></script>
-<script src="dist/js/models/todo.js"></script>
-<script src="dist/js/collections/todos.js"></script>
+<script src="dist/js/models/todo-model.js"></script>
+<script src="dist/js/models/list-model.js"></script>
+<script src="dist/js/collections/todos-collection.js"></script>
+<script src="dist/js/collections/lists-collection.js"></script>
 <script src="dist/js/views/todo-view.js"></script>
+<script src="dist/js/views/list-view.js"></script>
 <script src="dist/js/views/app-view.js"></script>
 <script src="dist/js/routers/router.js"></script>
 <script src="dist/js/app.js"></script>
 <!--<script src="dist/js/libs/parse-1.0.14.min.js"></script>-->
+<script src="dist/js/libs/bootstrap-datepicker.js"></script>
 <script src="dist/js/main.js"></script>
 </body>
 </html>

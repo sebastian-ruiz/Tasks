@@ -84,17 +84,18 @@ $(document).ready(function () {
 
         ,	showDebugMessages:			true // log and/or display messages from debugging & testing code
     });
-    $('.ui-layout-center').noisy({
-        intensity: 0.9,
-        size: 200,
-        opacity: 0.05,
-        fallback: 'fallback.png',
-        monochrome: false
-    });
-//    $(function() {
-//        $( "#todo-list" ).accordion({
-//            heightStyle: "content"
-//        });
+//    $('.ui-layout-center').noisy({
+//        intensity: 0.9,
+//        size: 200,
+//        opacity: 0.05,
+//        fallback: 'fallback.png',
+//        monochrome: false
 //    });
-
+    var nowTemp = new Date();
+    var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+    var checkin = $('.input-date').datepicker({
+        onRender: function(date) {
+            return date.valueOf() < now.valueOf() ? 'disabled' : '';
+        }
+    });
 });

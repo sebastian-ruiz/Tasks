@@ -13,8 +13,10 @@ var app = app || {};
 		// and ensure that each todo created has `title` and `completed` keys.
 		defaults: {
 			title: '',
+            tags: '',
+            notes: '',
+            dateDue: '',
 			completed: false,
-            selected: false,
             objectid: ''
 		},
 
@@ -38,19 +40,6 @@ var app = app || {};
             }else {
                 console.log("already: " + this.get("objectid"));
             }
-        },
-        setSelected: function() {
-            if(this.get('selected') == true){
-                this.save({
-                    selected: false
-                });
-            }else {
-                this.collection.deselectLastSelected();
-                this.save({
-                    selected: true
-                });
-            }
-
         }
 
 	});

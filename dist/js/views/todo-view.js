@@ -18,11 +18,19 @@ var app = app || {};
 		// The DOM events specific to an item.
 		events: {
 			'click .toggle': 'toggleCompleted',
-			'dblclick span.item-title': 'edit',
+            'click .tasks-wrapper': 'newSelected',
+            //'blur .tasks-wrapper': 'deselect',
+            'dblclick .tasks-wrapper': 'edit',
 			'click .destroy': 'clear',
 			'keypress .edit': 'updateOnEnter',
 			'blur .edit': 'close',
-            'click .tasks-wrapper': 'newSelected'
+            'keypress #input-tags': 'updateOnEnter',
+            'blur #input-tags': 'closeTags',
+            'keypress #input-notes': 'updateOnEnter',
+            'blur #input-notes': 'closeNotes',
+            'keypress #input-date': 'updateOnEnter',
+            'blur #input-date': 'closeDate'
+
 		},
 
 		// The TodoView listens for changes to its model, re-rendering. Since there's
@@ -33,6 +41,7 @@ var app = app || {};
 			this.listenTo(this.model, 'destroy', this.remove);
 			this.listenTo(this.model, 'visible', this.toggleVisible);
             this.model.generateObjectid();
+
 		},
 
 		// Re-render the titles of the todo item.
@@ -40,7 +49,11 @@ var app = app || {};
 			this.$el.html(this.template(this.model.toJSON()));
 			this.$el.toggleClass('completed', this.model.get('completed'));
 			this.toggleVisible();
-			this.$input = this.$('.edit');
+			this.$inputTitle = this.$('.edit');
+            this.$inputTags = this.$('#input-tags');
+            this.$inputNotes = this.$('#input-notes');
+            this.$inputDate = this.$('#input-date');
+            this.$tasksWrapper = this.$('.tasks-wrapper');
 			return this;
 		},
 
@@ -55,33 +68,58 @@ var app = app || {};
 				(isCompleted && app.TodoFilter === 'active')
 			);
 		},
-        newSelected: function () {
-            this.model.setSelected();
-        },
 		// Toggle the `"completed"` state of the model.
 		toggleCompleted: function () {
 			this.model.toggle();
 		},
-
+        newSelected: function () {
+            $(".tasks-wrapper").removeClass("selected-item");
+            this.$tasksWrapper.addClass('selected-item');
+        },
 		// Switch this view into `"editing"` mode, displaying the input field.
 		edit: function () {
 			this.$el.addClass('editing');
-			this.$input.focus();
+			this.$inputTitle.focus();
 		},
 
 		// Close the `"editing"` mode, saving changes to the todo.
 		close: function () {
-			var trimmedValue = this.$input.val().trim();
-			this.$input.val(trimmedValue);
+            console.log("blur close");
+			var trimmedValue = this.$inputTitle.val().trim();
+			this.$inputTitle.val(trimmedValue);
 
 			if (trimmedValue) {
 				this.model.save({ title: trimmedValue });
 			} else {
-				this.clear();
+				//this.clear();
 			}
-
-			this.$el.removeClass('editing');
+            //this.$tasksWrapper.removeClass('selected-item');
+			//this.$el.removeClass('editing');
 		},
+        closeTags: function() {
+            var trimmedValue = this.$inputTags.val().trim();
+            this.$inputTags.val(trimmedValue);
+
+            if (trimmedValue) {
+                this.model.save({ tags: trimmedValue });
+            }
+        },
+        closeNotes: function() {
+            var trimmedValue = this.$inputNotes.val().trim();
+            this.$inputNotes.val(trimmedValue);
+
+            if (trimmedValue) {
+                this.model.save({ notes: trimmedValue });
+            }
+        },
+        closeDate:function() {
+            var trimmedValue = this.$inputDate.val().trim();
+            this.$inputDate.val(trimmedValue);
+
+            if (trimmedValue) {
+                this.model.save({ dateDue: trimmedValue });
+            }
+        },
 
 		// If you hit `enter`, we're through editing the item.
 		updateOnEnter: function (e) {

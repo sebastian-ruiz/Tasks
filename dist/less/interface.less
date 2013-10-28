@@ -1,3 +1,8 @@
+@import "datepicker.less";
+
+@myBlue: #4386f4;
+@myLightGrey: #D4D4D4;
+
 body {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -14,7 +19,7 @@ ul {
 }
 .ui-layout-west {
   background-color: #34313A;
-  color: #D4D4D4;
+  color: @myLightGrey;
 
   .user-account {
     padding: 7px 0 0 10px;
@@ -47,16 +52,38 @@ ul {
         }
       }
       li.selected-list {
-        background-color: #4386F4;
+        background-color: @myBlue;
         color: #fff;
       }
     }
   }
   .footer {
+    .glyphicon {
+      color: @myLightGrey;
+    }
     padding: 0 0 10px 13px;
     position: absolute;
     bottom: 0;
+    div {
+      float: left;
+    }
+    .dropdown {
+      li a:hover {
+        background-color: @myBlue;
+        color: white;
+      }
+    }
+    span {
+      margin-left: 2px;
+      margin-right: 14px;
+    }
   }
+}
+.navbar .dropdown-menu::after {
+  border-bottom: 0px solid transparent !important;
+  border-top: 6px solid white;
+  top: auto !important;
+  bottom: -6px;
 }
 input {
   border: none;
@@ -66,26 +93,16 @@ input {
 input:focus{
   outline: 0;
 }
-.input-wrapper {
-  width: 100%;
-  padding-right: 30px;
-  input {
-    float: left;
-    width: 100%;
-  }
-  input.edit {
-    display: none;
-  }
-}
+
 .editing {
   .input-wrapper input.edit {
-    display: block;
+    display: block !important;
   }
-  span.item-title {
-    display: none;
+  .input-wrapper span.item-title {
+    display: none !important;
   }
   .tasks-wrapper div.task-item-expandable {
-    display: block;
+    display: block !important;
   }
 }
 
@@ -103,7 +120,24 @@ input:focus{
       min-height: 16px;
       padding: 0 10px 0 10px;
       .item-title {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        word-wrap: break-word;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         float: left;
+      }
+      .input-wrapper {
+        width: 100%;
+        padding-left: 25px;
+        input {
+          float: right;
+          width: 100%;
+        }
+        input.edit {
+          display: none;
+        }
       }
 
       input[type=checkbox] {
@@ -117,7 +151,7 @@ input:focus{
         width: 16px;
         display:inline-block;
         padding: 0 0 0 0px;
-        float: right;
+        float: left;
         margin: 0 0 0 0;
       }
       input[type=checkbox]:checked + label
@@ -138,9 +172,9 @@ input:focus{
         width: 100%;
         li {
           border-top: 1px solid #cecece;
-          padding: 3px 10px 3px 13px;
+          padding: 3px 10px 3px 12px;
           span:first-of-type {
-            color: #505050;
+            color: #555555;
           }
           .input-details-wrapper {
             padding-left: 20px;
@@ -166,38 +200,8 @@ input:focus{
     border: 1px solid #BCBCBC;
     padding: 5px 10px 5px 10px;
     margin-bottom: 10px;
-    .new-task-input {
-      height: 16px;
-      background: transparent;
-      color: #888888;
-      div {
-        width: 100%;
-        padding-right: 30px;
-      }
-      input[type=checkbox] {
-        display:none;
-
-      }
-      input[type=checkbox] + label
-      {
-        //background: #999;
-        background-image: url("../images/checkbox_unchecked.png");
-        height: 16px;
-        width: 16px;
-        display:inline-block;
-        padding: 0 0 0 0px;
-        float: right;
-        margin: 0 0 0 0;
-      }
-      input[type=checkbox]:checked + label
-      {
-        //background: #FFF;
-        background-image: url("../images/checkbox_checked.png");
-        height: 16px;
-        width: 16px;
-        display:inline-block;
-        padding: 0 0 0 0px;
-      }
+    #new-todo {
+      width: 100%;
     }
   }
   .selected-item {
