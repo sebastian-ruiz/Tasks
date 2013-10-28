@@ -40,6 +40,7 @@ var app = app || {};
 			this.listenTo(app.todos, 'all', this.render);
 
             $(document).on('keyup', this.keyUp);
+            $(document).on('keydown', this.keyDown);
 			// Suppresses 'add' events with {reset: true} and prevents the app view 
 			// from being re-rendered for every model. Only renders when the 'reset'
 			// event is triggered at the end of the fetch.
@@ -133,6 +134,15 @@ var app = app || {};
             if(event.which == BACKSPACE_KEY || event.which == DELETE_KEY){
                 if(!$("*:focus").is("textarea, input")){
                     app.todos.deleteSelected();
+                }
+            }
+        },
+        keyDown: function(event) {
+            //Only detect key down to stop browser redirect.
+            console.log("event keydown");
+            if(event.which == BACKSPACE_KEY){
+                if(!$("*:focus").is("textarea, input")){
+                    event.preventDefault();
                 }
             }
         }

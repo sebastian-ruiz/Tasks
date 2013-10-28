@@ -2,26 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/views/app-view.js" afterPath="$PROJECT_DIR$/dist/js/views/app-view.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/interface.css" afterPath="$PROJECT_DIR$/dist/css/interface.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/less/interface.less" afterPath="$PROJECT_DIR$/dist/less/interface.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/main.js" afterPath="$PROJECT_DIR$/dist/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/views/todo-view.js" afterPath="$PROJECT_DIR$/dist/js/views/todo-view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/collections/todos.js" afterPath="$PROJECT_DIR$/dist/js/collections/todos.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Tasks.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/main.less" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382267246435" ignored="false" />
     <file path="/main.css" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382267320479" ignored="false" />
-    <file path="/index.html" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382816662948" ignored="false" />
-    <file path="/interface.less" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382816465000" ignored="false" />
+    <file path="/index.html" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382957447857" ignored="false" />
+    <file path="/interface.less" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382956789490" ignored="false" />
     <file path="/main.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382276752446" ignored="false" />
     <file path="/todo.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382810417302" ignored="false" />
     <file path="/todos.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382814815093" ignored="false" />
     <file path="/app.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382811955794" ignored="false" />
-    <file path="/Dummy.txt" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382780109454" ignored="false" />
-    <file path="/todo-view.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382816064626" ignored="false" />
-    <file path="/app-view.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382812998147" ignored="false" />
+    <file path="/Dummy.txt" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382954186571" ignored="false" />
+    <file path="/todo-view.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382955401518" ignored="false" />
+    <file path="/app-view.js" changelist="0bc1cb39-71e7-43bd-81d3-685b1c73d9f3" time="1382882145546" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +85,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="16" selection-start="2744" selection-end="2834" vertical-scroll-proportion="-13.125">
+            <state line="85" column="73" selection-start="3929" selection-end="3929" vertical-scroll-proportion="-23.75">
               <folding />
             </state>
           </provider>
@@ -94,16 +94,7 @@
       <file leaf-file-name="interface.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/less/interface.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="87" selection-start="2582" selection-end="2582" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dist/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="0" selection-start="4017" selection-end="4136" vertical-scroll-proportion="0.0">
+            <state line="131" column="65" selection-start="2509" selection-end="2509" vertical-scroll-proportion="-3.5769231">
               <folding />
             </state>
           </provider>
@@ -112,7 +103,7 @@
       <file leaf-file-name="todos.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/js/collections/todos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="116" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
+            <state line="3" column="32" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -121,10 +112,17 @@
       <file leaf-file-name="todo.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/js/models/todo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="19" selection-start="1198" selection-end="1209" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="38" column="54" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="17" selection-start="84" selection-end="97" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,10 +130,8 @@
       <file leaf-file-name="app-view.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dist/js/views/app-view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="27" selection-start="4005" selection-end="4005" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="134" column="95" selection-start="3950" selection-end="3950" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -143,10 +139,8 @@
       <file leaf-file-name="todo-view.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dist/js/views/todo-view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="26" selection-start="499" selection-end="499" vertical-scroll-proportion="0.45586106">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state line="24" column="12" selection-start="598" selection-end="598" vertical-scroll-proportion="0.2597968">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -184,21 +178,20 @@
         <option value="$PROJECT_DIR$/dist/js/views/todos.js" />
         <option value="$PROJECT_DIR$/dist/js/models/todo.js" />
         <option value="$PROJECT_DIR$/dist/js/app.js" />
-        <option value="$PROJECT_DIR$/dist/js/views/app-view.js" />
         <option value="$PROJECT_DIR$/dist/js/collections/todos.js" />
         <option value="$PROJECT_DIR$/dist/js/main.js" />
-        <option value="$PROJECT_DIR$/dist/js/views/todo-view.js" />
-        <option value="$PROJECT_DIR$/dist/less/interface.less" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/dist/less/interface.less" />
+        <option value="$PROJECT_DIR$/dist/js/views/app-view.js" />
+        <option value="$PROJECT_DIR$/dist/js/views/todo-view.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="206" />
     <option name="y" value="22" />
-    <option name="width" value="1234" />
-    <option name="height" value="839" />
+    <option name="width" value="1437" />
+    <option name="height" value="837" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -227,6 +220,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -385,7 +379,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -401,8 +394,8 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -492,7 +485,7 @@
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
   <component name="ToolWindowManager">
-    <frame x="206" y="22" width="1234" height="839" extended-state="6" />
+    <frame x="0" y="22" width="1437" height="837" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -500,7 +493,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18771043" sideWeight="0.67086834" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1675054" sideWeight="0.67086834" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -589,9 +582,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/js/libs/parse-1.0.14.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/less/main.less">
@@ -606,86 +597,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/bower_components/todomvc-common/base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="31" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="12" column="31" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/js/libs/backbone-min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/js/routers/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="84" selection-end="97" vertical-scroll-proportion="0.08658009">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/collections/todos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="116" selection-start="572" selection-end="572" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/models/todo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="19" selection-start="1198" selection-end="1209" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="0" selection-start="4017" selection-end="4136" vertical-scroll-proportion="0.0">
+        <state line="73" column="50" selection-start="3191" selection-end="3191" vertical-scroll-proportion="0.27366865" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="73" selection-start="3929" selection-end="3929" vertical-scroll-proportion="-23.75">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/less/interface.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="87" selection-start="2582" selection-end="2582" vertical-scroll-proportion="0.0">
+        <state line="131" column="65" selection-start="2509" selection-end="2509" vertical-scroll-proportion="-3.5769231">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/dist/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="16" selection-start="2744" selection-end="2834" vertical-scroll-proportion="-13.125">
+        <state line="4" column="17" selection-start="84" selection-end="97" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/models/todo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="54" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/collections/todos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="32" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/js/views/app-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="27" selection-start="4005" selection-end="4005" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="134" column="95" selection-start="3950" selection-end="3950" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/js/views/todo-view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="26" selection-start="499" selection-end="499" vertical-scroll-proportion="0.45586106">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="24" column="12" selection-start="598" selection-end="598" vertical-scroll-proportion="0.2597968">
+          <folding />
         </state>
       </provider>
     </entry>

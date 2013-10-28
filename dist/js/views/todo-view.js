@@ -18,7 +18,7 @@ var app = app || {};
 		// The DOM events specific to an item.
 		events: {
 			'click .toggle': 'toggleCompleted',
-			'dblclick label': 'edit',
+			'dblclick span.item-title': 'edit',
 			'click .destroy': 'clear',
 			'keypress .edit': 'updateOnEnter',
 			'blur .edit': 'close',
